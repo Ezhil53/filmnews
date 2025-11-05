@@ -97,8 +97,8 @@ const News = () => {
                 })
                 .map((item) => (
                   <Link to={`/news/${createSlug(item.title)}/${item._id}`} key={item._id}>
-                    <div className="grid grid-cols-3 border gap-3 border-black/10 p-3 rounded-lg bg-white mb-2">
-                      <div>
+                    <div className="grid grid-cols-3 border gap-3 border-black/10 p-3 rounded-lg bg-white mb-2 group ">
+                      <div className="group-hover:scale-105 transition-all duration-200">
                         <img
                           src={item?.newsimage}
                           alt="News"
@@ -106,7 +106,7 @@ const News = () => {
                         />
                       </div>
                       <div className="col-span-2 flex flex-col justify-around">
-                        <h1 className="text-black text-md line-clamp-2 ">
+                        <h1 className="text-black text-md line-clamp-2 group-hover:text-amber-600 transition-all duration-200">
                           {item?.title}
                         </h1>
                         <p className="text-gray-500 text-sm flex items-center gap-2">
