@@ -15,6 +15,10 @@
     {
       "source": "/api/users",
       "destination": "/api/v1/users"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/"
     }
   ],
   "headers": [
