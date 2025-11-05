@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Rozha+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@200;300;400;500;600;700;800&family=Signika+Negative:wght@300..700&display=swap');
+@import "tailwindcss";
+
+
+
+h1, .description{
+font-family: "Mukta Malar", sans-serif;
+}
+
+
+@keyframes gradient {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 3s ease infinite;
+}
+
