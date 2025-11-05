@@ -1,0 +1,35 @@
+{
+  "redirects": [
+    {
+      "source": "/old-path",
+      "destination": "/new-path",
+      "permanent": true
+    },
+    {
+      "source": "/blog/:slug",
+      "destination": "/posts/:slug",
+      "permanent": false
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/api/users",
+      "destination": "/api/v1/users"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        }
+      ]
+    }
+  ]
+}
